@@ -1,0 +1,13 @@
+class a 
+{
+	public static void main(String[] args) 
+	{
+		boolean res=m1();
+		System.out.println(res);
+	}
+
+	public static boolean m1() {
+		System.out.println("Hi");
+		return true;
+	}
+}

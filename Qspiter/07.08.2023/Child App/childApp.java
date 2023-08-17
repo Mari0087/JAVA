@@ -1,0 +1,43 @@
+import java.util.*;
+class student {
+    static String user_name,pwt;
+    static long contect;
+    static boolean sign_up_key=true;
+    static boolean studentCheck=true;
+    static Scanner sc=new Scanner(System.in);
+    public static void main(String[] args) {
+        while(studentCheck){
+            System.out.println("\t\t\tWelcome To Student Portfolio");
+            System.out.println("\n1.Sign Up\n2.Log-In\n3.Forgetter Credumtied\n4.Exit"); 
+            System.out.println("\nSelect Input");
+            int user_input=sc.nextInt();
+            switch (user_input) {
+                case 1:{
+                    SignUp.getSignUp();
+                    break;
+                }
+                case 2:{
+                    SignUp.getLogin();
+                    break;
+                }
+                case 3:{
+                    SignUp.Forgetter();
+                    break;
+                }
+                case 4:{
+                    System.out.println("\t\t\tThank You....");
+                    studentCheck=false;
+                    break;
+                }
+                default:
+					System.out.println("\t\t\tInvalid Input....");
+                    break;
+            }
+        }
+    }
+    public static void m1(){
+        System.out.println("hi");
+    }
+
+}
+

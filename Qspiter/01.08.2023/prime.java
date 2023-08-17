@@ -1,0 +1,20 @@
+import java.util.*;
+class prime 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the number");
+		int number = sc.nextInt();
+		String res="prime";
+		for(int i=2;i<number;i++){
+			if(number%i==0){
+				res="composite";
+				break;
+			}
+			else
+				res="prime";
+		}
+		System.out.println(number+" is " +res);
+	}
+}
