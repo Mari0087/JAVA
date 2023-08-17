@@ -1,0 +1,13 @@
+class w10 
+{
+	public static void main(String[] args) 
+	{
+		char start1='A',start2='a',end='Z';
+		while(start1<=end)
+		{
+			System.out.print(start1+""+start2+"");
+			start1++;
+			start2++;
+		}
+	}
+}

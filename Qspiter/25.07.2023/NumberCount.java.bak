@@ -1,0 +1,23 @@
+import java.util.*;
+class NumberCount 
+{
+	static Scanner sc = new Scanner(System.in); 
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter the Number");
+		int num = sc.nextInt();
+		int count = 0;
+
+		while(num>0){
+			num/=10;
+			count++;
+		}
+		System.out.println("Count is "+count);
+
+		if(count%2==0){
+		System.out.println("Count is even number");
+		}else{
+		System.out.println("Count is odd number");			
+		}
+	}
+}
